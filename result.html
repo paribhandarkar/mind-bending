@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="result.css">
+
+</head>
+
+<body>
+    <h1>mind bending</h1>
+    <h2>your &nbsp; animation &nbsp; &nbsp; pit-stop</h2>
+    <h3>Confirmation &nbsp; &nbsp; Details</h3>
+    <section>
+        <p>Name: <span id="result-name"></span>&nbsp;<span id="result-name1"></span></p>
+        <p>Age: <span id="result-age"></span></p>
+        <p>Email: <span id="result-email"></span></p>
+        <script>
+            document.getElementById("result-name").innerHTML = localStorage.getItem("textvalue");
+            document.getElementById("result-name1").innerHTML = localStorage.getItem("textvalue1");
+            document.getElementById("result-age").innerHTML = localStorage.getItem("age");
+            document.getElementById("result-email").innerHTML = localStorage.getItem("emailvalue");
+        </script>
+        <p>City: <span id="result-city"></span></p>
+        <p>Address: <span id="result-address"></span></p>
+        <script>
+            document.getElementById("result-city").innerHTML = localStorage.getItem("cityvalue");
+            document.getElementById("result-address").innerHTML = localStorage.getItem("addvalue"); 
+        </script>
+        <a href="last.html">
+            <button type="submit">Submit</button>
+        </a>
+    </section>
+</body>
+
+</html>

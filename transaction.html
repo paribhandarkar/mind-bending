@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Form</title>
+    <link rel="stylesheet" href="transaction.css">
+    <script>
+        function passvalues(){
+            var c = document.getElementById("city").value;
+            localStorage.setItem("cityvalue", c);
+            var ad = document.getElementById("address").value;
+            localStorage.setItem("addvalue", ad);
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>mind bending</h1>
+    <h2>your &nbsp; animation &nbsp; &nbsp; pit-stop</h2>
+    <h3>Registration &nbsp; &nbsp; Form</h3>
+    <h4>Please fill out this form with the required information</h4>
+    <form action='result.html'>
+        <fieldset>
+            <label for="">Enter Your Full Name: <input id="" name="" type="text"  /></label>
+            <label for="">Enter Your Card Number: <input type="text" /></label>
+            <label for="">Enter Your Security Code: <input type="number" /></label>
+            <label for="">Enter Your Expiration Date: <input type="date" /></label>
+            <label for="address">Enter Your Address:<textarea rows="10" cols="30" id="address"></textarea></label>
+            <label for="city">Enter Your City: <input type="text" id="city" /></label>
+        </fieldset>
+        <input type="submit" value="Submit" onclick="passvalues();" />
+    </form>
+    <p style="color: white;">.</p>
+</body>
+
+</html>

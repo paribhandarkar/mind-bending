@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <style>
+ 
+
+#h1 {
+    font-family: 'Monoton', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 74.0571px;
+    text-align: center;
+    line-height: 115px;
+    margin-top: 7%;
+}
+
+#h2 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45.6701px;
+    line-height: 35px;
+    text-align: center;
+    margin-left: 26%;
+} 
+       
+        #over{
+            position: absolute;
+            z-index: 5;
+            left: 20%;
+            top: 218px;
+            width: 500px;
+            padding-left: 150px;
+            text-align: center;
+            font-family: 'Monoton';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18.6701px;
+            line-height: 31px;
+            margin-top: 600px;
+            transform: scale(1.8);
+
+        }
+        #opt,#modes{
+            margin-left: 100px;
+            margin-top: 50px;
+            text-align: left;
+        }
+        img{
+            margin-top: 0%;
+            height: 50%;
+            margin-left: 7%;
+        }
+        a{
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body >
+    <img src="tbg.svg" alt="" id="img">
+
+    <!-- <h1 id="h1">mind bending</h1>
+    <h2 id="h2">your &nbsp; animation &nbsp; &nbsp; pit-stop</h2> -->
+    <div id="b1"></div>
+    <div id="b2"></div>
+    <section id="over">
+        <h1 >CHOOSE THE CSS METHODS YOU WANT IN YOUR ANIMATION</h1>
+        <section id="opt">
+            <div><input type="checkbox" name="" value="i_1" id="rotate">Rotate</div>
+            <div><input type="checkbox" name="" value="i_2" id="skew">Skew</div>
+            <div><input type="checkbox" name="" value="i_3" id="translate">Translate</div>
+            <div><input type="checkbox" name="" value="i_4" id="transform">Transform</div>
+            <div><input type="checkbox" name="" value="i_5" id="perspective">Perspective</div>
+            <div><u><b>Deadline</b></u>&nbsp;&nbsp;<input type="date" name="decline" id=""></div>
+            <div><label><u><b>Quality:-</b></u><br>
+                    <input type="radio" value="x" id="low" name="a">Low
+                    <input type="radio" value="y" id="medium" name="a">Medium
+                    <input type="radio" value="z" id="high" name="a">High
+            </div>
+            <!-- <div><label>type <br>
+                <input type="radio" id="2d" name="b">2-D
+                <input type="radio" id="3d" name="b">3-D
+        </div><br> -->
+            <button onclick="types()" id="submit">SUBMIT</button><br>
+            <!-- <button >PROCEED FOR PAYMENT </button> -->
+        </section>
+
+        <section id="modes">
+            <u id="">PAYMENT MODES </u><br>
+            <input type="radio" name="1" value="1">UPI/Netbanking <br>
+            <input type="radio" name="1" value="1">debit card <br>
+            <input type="radio" name="1" value="1">credit card <br>
+            <button id="pmcontinue"><a href="transaction.html">CONTINUE</a></button>
+        </section>
+
+    </section>
+    <script src="services.js">
+
+    </script>
+    <script>
+        function fun(){
+    var in1= document.querySelector("input[type='radio']:checked");
+    if(in1==null)
+    {
+   alert("you have to select one payment mode");
+   return false;
+    }
+
+    else{
+        return true;
+    }
+}
+    </script>
+</body>
+</html>

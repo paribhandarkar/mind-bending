@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+/* font-family: 'Monoton', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
+/* font-family: 'Rubik', sans-serif; */
+
+* {
+    cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.svg), auto;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 30px;
+    background: url(fbg.svg);
+    background-color: #F2D1E9;
+}
+
+h1 {
+    font-family: 'Monoton', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 74.0571px;
+    text-align: center;
+    line-height: 115px;
+    margin-top: 7%;
+}
+
+h2 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45.6701px;
+    line-height: 35px;
+    text-align: center;
+    margin-left: 26%;
+}
+
+main {
+    display: flex;
+}
+
+.first {
+    margin: 10.5% 14%;
+}
+
+.first p:first-child {
+    color: #F2D1E9;
+    -webkit-text-stroke: 1px black;
+    font-weight: 700;
+    font-size: 35.67px;
+    line-height: 42px;
+    width: 468px;
+}
+
+.first p:nth-child(2) {
+    font-weight: 400;
+    font-size: 45.6701px;
+    line-height: 54px;
+    margin-bottom: 0;
+}
+
+.first p:nth-child(3) {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    width: 458px;
+}
+
+.first p:nth-child(4) {
+    font-weight: 400;
+    font-size: 19.0189px;
+    line-height: 23px;
+}
+
+.second p {
+    font-weight: 400;
+    font-size: 19.0189px;
+    line-height: 23px;
+    width: 165px;
+    height: 184px
+}
+
+.second {
+    margin-left: 12.5%;
+    margin-top: 16%;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 45.6701px;
+    line-height: 54px;
+    margin: 14% 0 4% 23%;
+}
+
+.creators p {
+    font-family: 'Monoton', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 33.7256px;
+    line-height: 52px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.creators p:nth-child(2) {
+    margin-left: 20%;
+}
+
+.creators p:nth-child(3) {
+    margin-left: 26%;
+}
+
+.creators p:nth-child(4) {
+    margin-left: 21%;
+}
+
+.creators p:nth-child(5) {
+    margin-left: 24%;
+}
+
+.footer p:first-child {
+    font-weight: 400;
+    font-size: 33.1348px;
+    line-height: 39px;
+    margin-left: 55%;
+}
+
+.footer p:last-child {
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FF4C4C;
+    margin-left: 73%;
+}
+
+h4{
+    font-family: 'Monoton', cursive;
+    font-style: normal;
+font-weight: 400;
+font-size: 74.0571px;
+line-height: 115px;
+margin-left: 50%;
+margin-top: 0;
+}

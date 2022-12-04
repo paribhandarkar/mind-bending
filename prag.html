@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+</head>
+<body align="center">
+    <div>CHOOSE THE CSS METHODS YOU WANT IN YOUR ANIMATION</div>
+    <section>
+        <div><input type="checkbox" name="" value="i_1" id="rotate">Rotate</div>
+        <div><input type="checkbox" name="" value="i_2" id="skew">skew</div>
+        <div><input type="checkbox" name="" value="i_3" id="translate">translate</div>
+        <div><input type="checkbox" name="" value="i_4" id="transform">transform</div>
+        <div><input type="checkbox" name="" value="i_5" id="perspective">perspective</div>
+        <div>deadline <input type="date" name="decline" id=""></div>
+        <div><label>quality <br>
+                <input type="radio" value="x" id="low" name="a">low
+                <input type="radio" value="y" id="medium" name="a">medium
+                <input type="radio" value="z" id="high" name="a">high
+        </div>
+        <div><label>type <br>
+            <input type="radio" name="b">2-D
+            <input type="radio" name="b">3-D
+    </div><br>
+        <button onclick="types()" id="submit">SUBMIT</button>
+    </section>
+
+    <script>
+        function types(){
+    var a= document.querySelector('#rotate');
+    console.log(a.checked);
+    if(a.value == 'i_1'){
+        a=1;
+    }
+    else{
+        a=0;
+    }
+
+    var b= document.querySelector("#skew");
+    console.log(b.checked);
+    if(b.value == 'i_2'){
+        b=1;
+
+    }
+    else{
+        b=0;
+
+    }
+
+    var c= document.querySelector("#translate");
+    console.log(c.checked);
+    if(c.value == 'i_3'){
+        c=1;
+
+    }
+    else{
+        c=0;
+
+    }
+
+    var d= document.querySelector("#transform");
+    console.log(d.checked);
+    if(d.value == 'i_4'){
+        d=1;
+
+    }
+    else{
+        d=0;
+
+    }
+
+
+    var e= document.querySelector("#perspective");
+    console.log(e.checked);
+    if(e.value == 'i_5'){
+        e=1;
+
+    }
+    else{
+        e=0;
+
+    }
+    
+    alert(a);
+    alert(b);
+    alert(c);
+    alert(d);
+    alert(e);
+
+    
+    total = a+b+c+d+e;    
+    document.write('your total amount is : '+total);
+}
+    </script>
+</body>
+</html>

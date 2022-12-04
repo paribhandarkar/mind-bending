@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="personal-form.css" />
+    <script type="text/javascript">
+        function validate() {
+            var xa = document.getElementById("new-password").value;
+            var ya = document.getElementById("confirm-password").value;
+            var numbers = /[0-9]/g;
+            if (xa != ya) {
+                alert("You first Passwords is not similar with 2nd password. Please enter same password in both");
+                return false;
+            }
+            else {
+                if (xa.trim() == "") {
+                    alert("Password can't be blank");
+                    return false;
+                }
+                else {
+                    if (xa.length < 8) {
+                        alert("Password must have a minimum of 8 characters.");
+                        return false;
+                    }
+                    else {
+                        if (xa.match(numbers)) {
+                            return true;
+                        }
+                        else {
+                            alert("Password must contain at least one number.");
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+                return true;
+            }
+            return true;
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form action='display.html'>
+        <fieldset>
+            <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text"
+                    required /></label>
+            <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text"
+                    required /></label>
+            <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("new-password");
+                    var y = document.getElementById("confirm-password");
+                    if (x.type === "password") {
+                        x.type = "text";
+                    } else {
+                        x.type = "password";
+                    }
+                    if (y.type === "password") {
+                        y.type = "text";
+                    } else {
+                        y.type = "password";
+                    }
+
+                }
+            </script>
+            <label for="new-password">Create a New Password: <span style="color: red; visibility: hidden;">Password
+                    can't be empty. And it must contain atleast one number and minimum eight characters.</span><input
+                    id="new-password" name="new-password" type="password" />
+                <input style="width: fit-content; min-height: fit-content; margin-right: 2%;" type="checkbox"
+                    onclick="myFunction()">Show Password
+            </label>
+            <label for="confirm-password">Confirm Password: <input id="confirm-password" name="confirm-password"
+                    type="password" />
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="personal-account"><input id="personal-account" type="radio" name="account-type"
+                    class="inline" /> Personal Account</label>
+            <label for="business-account"><input id="business-account" type="radio" name="account-type"
+                    class="inline" /> Business Account</label>
+            <label for="terms-and-conditions" name="terms-and-conditions">
+                <input id="terms-and-conditions" type="checkbox" name="terms-and-conditions" class="inline" />
+                I accept the <a href="#">terms and conditions</a>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file"
+                    name="file" /></label>
+            <label for="age">Enter your age (years): <input id="age" type="number" name="age" min="13"
+                    max="120" /></label>
+            <label for="referrer">How did you hear about us?
+                <select id="referrer" name="referrer">
+                    <option value="">(select one)</option>
+                    <option value="1">News</option>
+                    <option value="2">YouTube</option>
+                    <option value="3">Social Media</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+            <label for="bio">Provide a bio:
+                <textarea id="bio" name="bio" rows="3" cols="30"
+                    placeholder="I like to paint in my free time..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit" onclick="return validate()" />
+    </form>
+</body>
+
+</html>
